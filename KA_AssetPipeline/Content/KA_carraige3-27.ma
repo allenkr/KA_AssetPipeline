@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: KA_carraige3-27.ma
-//Last modified: Wed, Mar 27, 2019 01:14:26 PM
+//Last modified: Wed, Mar 27, 2019 01:18:20 PM
 //Codeset: 1252
 requires maya "2018ff09";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "02CC2EAD-4B25-7087-0459-4EB38283BDE5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.1060032726407156 3.1772758427943888 -5.8161733830964284 ;
-	setAttr ".r" -type "double3" -17.738352850353724 3129.3999999991152 0 ;
+	setAttr ".t" -type "double3" 21.792651597466346 4.1350074846651168 5.499739681731084 ;
+	setAttr ".r" -type "double3" -4.5383528398013109 2946.9999999985394 1.017501054231914e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D7F3DC98-434F-7371-20E4-2AB26F7F902D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.7646246043599154;
+	setAttr ".coi" 21.663423706282209;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -270,13 +270,15 @@ createNode mesh -n "polySurface2Shape" -p "|polySurface2";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.60823139548301697 0.76804161071777344 ;
+	setAttr ".pv" -type "double2" 0.625 1 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 6 ".pt";
+	setAttr -s 8 ".pt";
+	setAttr ".pt[7]" -type "float3" 0 0 -0.050424956 ;
+	setAttr ".pt[42]" -type "float3" 0 0 -0.050424956 ;
 	setAttr ".pt[380]" -type "float3" 0 -0.025121754 0 ;
 	setAttr ".pt[381]" -type "float3" 0 -0.025121961 0 ;
 	setAttr ".pt[428]" -type "float3" 0 -0.026783213 0 ;
