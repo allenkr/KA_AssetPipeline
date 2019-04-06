@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: KA_carraigeFinal .ma
-//Last modified: Fri, Apr 05, 2019 10:19:00 PM
+//Last modified: Fri, Apr 05, 2019 10:21:29 PM
 //Codeset: 1252
 requires maya "2018ff09";
 requires "stereoCamera" "10.0";
@@ -13,8 +13,8 @@ fileInfo "osv" "Microsoft Windows 8 Home Premium Edition, 64-bit  (Build 9200)\n
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "02CC2EAD-4B25-7087-0459-4EB38283BDE5";
-	setAttr ".t" -type "double3" 23.121437274343634 20.99753798132318 20.734970745716051 ;
-	setAttr ".r" -type "double3" -32.155021692895509 767.31433272655124 2.3456254979320578e-15 ;
+	setAttr ".t" -type "double3" 27.911916499664223 17.380817711455755 17.811965180515358 ;
+	setAttr ".r" -type "double3" -25.555021692895469 776.91433272654876 0 ;
 	setAttr ".rp" -type "double3" 0 -2.7755575615628914e-16 0 ;
 	setAttr ".rpt" -type "double3" -2.2570849878563051e-15 9.9526504600805025e-20 7.3526973813810176e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
